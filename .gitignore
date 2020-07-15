@@ -2,6 +2,7 @@
 .dirstamp
 *.o
 *.obj
+*.exe
 ping
 *.ilk
 *.manifest

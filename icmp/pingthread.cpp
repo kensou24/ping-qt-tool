@@ -22,8 +22,14 @@ PingThread::~PingThread() {
 
 void PingThread::init() {
   io_context.reset(new asio::io_context());
-  m_pinger.reset(
-      new pinger(*io_context.data(), m_ip.toStdString().c_str(), this));
+  try {
+    m_pinger.reset(
+        new pinger(*io_context.data(), m_ip.toStdString().c_str(), this));
+  } catch (exception &e) {
+    addLog("exception create pinger " + m_ip);
+    m_pinger.reset();
+  }
+
   m_timerId = startTimer(1);
 }
 

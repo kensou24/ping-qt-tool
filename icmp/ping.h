@@ -98,7 +98,7 @@ class pinger {
 
       QString info =
           QString("%1  Request timed out of %2")
-              .arg(QDateTime::currentDateTime().toString("yyyy-MMdd- hh:mm:ss"),
+              .arg(QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss"),
                    ip);
       QCoreApplication::postEvent(m_object, new PingFailEvent(info));
     }
