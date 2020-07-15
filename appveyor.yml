@@ -22,7 +22,7 @@ build_script:
   - qmake icmp.pro
   - nmake
 after_build:
-  - cd C:\projects\icmp
+  - cd C:\projects\ping-qt-tool
   - dir bin
   - windeployqt bin\icmp.exe 
   - xcopy vcredist bin /S /E /Y
