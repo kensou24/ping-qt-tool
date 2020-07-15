@@ -1,0 +1,39 @@
+version: 1.0.{build}
+
+branches:
+  only:
+    - master
+    
+environment:
+  matrix:
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    platform: x86
+    qt: 5.12
+    releaseName: ping_vs2017_x86
+before_build:
+  - if "%APPVEYOR_BUILD_WORKER_IMAGE%"=="Visual Studio 2017" set msvc=msvc2017
+  - if "%APPVEYOR_BUILD_WORKER_IMAGE%"=="Visual Studio 2017" set vs=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build
+  - if "%platform%"=="x86" set QTDIR=C:\Qt\%qt%\%msvc%
+  - set PATH=%PATH%;%QTDIR%\bin;
+  - if "%platform%"=="x86" set vcvarsall=%vs%\vcvarsall.bat
+  - if "%platform%"=="x86" call "%vcvarsall%" x86
+build_script:
+  - cd icmp
+  - qmake icmp.pro
+  - nmake
+after_build:
+  - cd C:\projects\icmp
+  - dir bin
+  - windeployqt bin\icmp.exe 
+  - xcopy vcredist bin /S /E /Y
+  - dir bin
+  
+artifacts:
+  - path: bin
+    name: $(releaseName)
+deploy:
+  provider: GitHub
+  auth_token: $(GITHUB_OAUTH_TOKEN)
+  description: 'Ping-Qt-Tool Release'
+  draft: false
+  prerelease: false
