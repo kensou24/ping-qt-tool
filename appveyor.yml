@@ -25,7 +25,7 @@ after_build:
   - cd C:\projects\ping-qt-tool
   - dir bin
   - windeployqt bin\icmp.exe 
-  - xcopy vcredist bin /S /E /Y
+  - xcopy vcredist/vcredist_msvc2017_x86.exe bin /S /E /Y
   - dir bin
   
 artifacts:
