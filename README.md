@@ -1,6 +1,6 @@
 #### ping工具
 
-基于boost-asio的使用icmp-ping检测网络是否正常的小工具。
+基于boost-asio\qt的使用icmp-ping检测网络是否正常的小工具。
 
 ## status
 | [Windows][win-link] | [Release][release-link]|
