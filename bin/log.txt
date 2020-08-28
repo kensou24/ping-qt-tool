@@ -1,0 +1,38 @@
+prepare to start new
+prepare to start new thread 192.168.11.103
+prepare to start new thread 192.168.11.204
+32  bytes from 192.168.11.103: icmp_seq=1, ttl=64, time=4 at 2020-08-28 14:41:19
+32  bytes from 192.168.11.204: icmp_seq=1, ttl=64, time=4 at 2020-08-28 14:41:19
+32  bytes from 192.168.11.103: icmp_seq=2, ttl=64, time=1 at 2020-08-28 14:41:20
+32  bytes from 192.168.11.204: icmp_seq=2, ttl=64, time=1 at 2020-08-28 14:41:20
+32  bytes from 192.168.11.103: icmp_seq=3, ttl=64, time=1 at 2020-08-28 14:41:21
+32  bytes from 192.168.11.204: icmp_seq=3, ttl=64, time=1 at 2020-08-28 14:41:21
+prepare to stop
+thread is going to stop 192.168.11.103
+thread is going to stop 192.168.11.204
+prepare to start new
+prepare to start new thread 192.168.11.103
+prepare to start new thread 192.168.21.204
+32  bytes from 192.168.11.103: icmp_seq=1, ttl=64, time=4 at 2020-08-28 14:41:26
+32  bytes from 192.168.11.103: icmp_seq=2, ttl=64, time=0 at 2020-08-28 14:41:27
+32  bytes from 192.168.11.103: icmp_seq=3, ttl=64, time=0 at 2020-08-28 14:41:28
+32  bytes from 192.168.11.103: icmp_seq=4, ttl=64, time=1 at 2020-08-28 14:41:29
+32  bytes from 192.168.11.103: icmp_seq=5, ttl=64, time=0 at 2020-08-28 14:41:30
+32  bytes from 192.168.11.103: icmp_seq=6, ttl=64, time=1 at 2020-08-28 14:41:31
+32  bytes from 192.168.11.103: icmp_seq=7, ttl=64, time=0 at 2020-08-28 14:41:32
+32  bytes from 192.168.11.103: icmp_seq=8, ttl=64, time=0 at 2020-08-28 14:41:33
+32  bytes from 192.168.11.103: icmp_seq=9, ttl=64, time=0 at 2020-08-28 14:41:34
+32  bytes from 192.168.11.103: icmp_seq=10, ttl=64, time=0 at 2020-08-28 14:41:35
+32  bytes from 192.168.11.103: icmp_seq=11, ttl=64, time=1 at 2020-08-28 14:41:36
+32  bytes from 192.168.11.103: icmp_seq=12, ttl=64, time=4 at 2020-08-28 14:41:37
+32  bytes from 192.168.11.103: icmp_seq=13, ttl=64, time=0 at 2020-08-28 14:41:38
+32  bytes from 192.168.11.103: icmp_seq=14, ttl=64, time=0 at 2020-08-28 14:41:39
+32  bytes from 192.168.11.103: icmp_seq=15, ttl=64, time=0 at 2020-08-28 14:41:40
+32  bytes from 192.168.11.103: icmp_seq=16, ttl=64, time=0 at 2020-08-28 14:41:41
+32  bytes from 192.168.11.103: icmp_seq=17, ttl=64, time=2 at 2020-08-28 14:41:42
+32  bytes from 192.168.11.103: icmp_seq=18, ttl=64, time=0 at 2020-08-28 14:41:43
+32  bytes from 192.168.11.103: icmp_seq=19, ttl=64, time=1 at 2020-08-28 14:41:44
+32  bytes from 192.168.11.103: icmp_seq=20, ttl=64, time=0 at 2020-08-28 14:41:45
+32  bytes from 192.168.11.103: icmp_seq=21, ttl=64, time=0 at 2020-08-28 14:41:46
+32  bytes from 192.168.11.103: icmp_seq=22, ttl=64, time=0 at 2020-08-28 14:41:47
+32  bytes from 192.168.11.103: icmp_seq=23, ttl=64, time=0 at 2020-08-28 14:41:48
