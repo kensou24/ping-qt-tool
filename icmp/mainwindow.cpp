@@ -78,7 +78,7 @@ void MainWindow::on_pushButton_exportLog_clicked()
     QFile data("log.txt");
     if (data.open(QFile::WriteOnly | QFile::Truncate)) {
         QTextStream out(&data);
-        QString logStr = ui->textEdit_log->toPlainText();
+        QString logStr = ui->textEdit_failLog->toPlainText();
         out << logStr;
     } else {
         QMessageBox msgBox;
